@@ -22,12 +22,6 @@ item.addEventListener('click', function() {
   document.body.style.backgroundColor = 'rgb(255,255,255)';
 });
 
-function crearHTMLButton() {} document.querySelector('#verde');
-item.addEventListener('click', function() {
-document.body.style.backgroundColor('0, 255, 179');
- })
-
-
 
 /*function crearHTMLButton = document.querySelector('#verde');
 item.addEventListener('click', function() {
