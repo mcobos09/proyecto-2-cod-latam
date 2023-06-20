@@ -1,0 +1,216 @@
+/* En este archivo escriban su CSS */
+/* Fonts */
+/* Importar aquí la font */
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+
+.green {
+  background-color: green;
+}
+
+.blanco { background-color: #dff8f4;
+
+
+}
+
+body { margin: 0; 
+    transition-duration: 2s;
+    background-color: rgb(0, 255, 179);
+    background-color: hsl(170, 64%, 92%);
+}
+
+
+header { 
+    background: #f6c4f8;
+    color: #100cec;
+    font-size: 18px;
+    padding: 20px ;
+    text-align: center;
+    text-transform: uppercase;
+    display: flexbox;
+      
+      
+  }
+
+
+  input[type="button"] {
+    font-size: 16px;
+    padding: 12px;
+    text-transform: uppercase;
+    }
+  
+
+   /* header anterior
+   display: flex;
+    justify-content: left;*/
+
+
+  .final-btn { font-family:monospace;
+    font-size: 15px;
+    background-color: rgb(34, 233, 223); /* Color diferente para el botón "Final" */
+    cursor: pointer;
+    padding: 14px 28px;
+  }
+
+  
+
+
+h5 { font-size: 30px;
+     padding-left: 20%;
+     margin-bottom: 10px;
+     justify-content: center;
+
+}
+
+
+#caja2 {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+.imagen-dos {
+    width: 150;
+    height: 150%;
+    border-radius: 45%;
+    margin-left: 100px;
+    border: 5px solid #dff8f4;
+    
+  }
+
+
+h2 { display: flex;
+    box-sizing: border-box; 
+    width: 50%;border: solid #fa05bd 10px;
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+    font-family:'Courier New', Courier, monospace; 
+    font-size:xx-large;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    
+}
+
+
+/* Para quitar los puntos a los items de listas */
+ol {flex-basis: initial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    line-height: 2cap; 
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
+div { 
+    display: flex; 
+    border: 2px solid rgb(98, 179, 216);
+    padding: 20px;
+}
+    
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+article { 
+    background-color: rgb(39, 245, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+
+
+.btn { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 60px;
+    margin: 20px;
+    background-color: #6b4bfa;
+    pointer-events:visible;
+
+}
+
+
+footer{ display: flex;
+    border-style: double;
+    height:50px;
+    width:100%;
+    color: #fc1657;
+    font-size:20px; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    position: inherit;
+    padding: 20px;
+  
+}   
+
+
+    
+    @media (max-width: 500px) {
+        html {
+          font-size: 60%;
+        }
+      
+        .imagen-dos {
+          max-width: 60%;
+          display: flex;
+          margin-bottom: 130px;
+          margin-left: 100px;
+        }
+      
+        #caja2 {
+          max-width: 20%;
+        }
+      
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+    
+    
+    
+
+
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
