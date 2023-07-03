@@ -27,7 +27,7 @@ item.addEventListener('click', function() {
 
 function createParagraph() {
   let para = document.createElement('article');
-  para.textContent = 'ACTUALMENTE REALIZÓ UN CURSO DE DESARROLLO DE SITIOS WEB, CON EIDOS Y CÓDIGO PALANTE.';
+  para.textContent = 'ACTUALMENTE REALIZÓ UN CURSO DE DESARROLLO DE SITIOS WEB, CON EIDOS, CÓDIGO PALANTE Y ACCENTURE.';
   document.body.appendChild(para);
 } 
 
@@ -37,24 +37,23 @@ function createParagraph() {
 
 
 
-
-
-/*for(let i = 0; i < 5; i++) {
-  console.log( i );
-
- 
-const buttons = document.querySelectorAll('button');
-for(let i = 0; i < buttons.length ; i++) {
-  buttons[i].addEventListener('click', );
+function init() {
+  var tema = localStorage.getItem("tema");
+  this.cambiarTema(tema);
 }
 
-/*function crearHTMLButton = document.querySelector('#verde');
-item.addEventListener('click', function() {
-document.body.style.backgroundColor('0, 255, 179');
-});
+function cambiarTema(tema) {
+  switch (tema) {
+    case "dark":
+      localStorage.setItem("tema", 'dark');
+      document.getElementById("btn-light").style.display = "block";
+      document.documentElement.setAttribute("data-theme", "dark");      
+      break;
+    default:
+      localStorage.setItem("tema", 'light');
+      document.getElementById("btn-dark").style.display = "block";
+      document.documentElement.setAttribute("data-theme", "light");      
+      break;
+  }
+}
 
-
-/*const changeFontBtn = document.querySelector('#verde');
-changeFontBtn.addEventListener('click', function() {
-  document.body.style.backgroundColor('0, 255, 179');
-});*/
